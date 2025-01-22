@@ -1,0 +1,18 @@
+spring:
+  application:
+  name=snowflake:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+
+snowflake:
+  node-id: 1 # Unique for each deployment instance
