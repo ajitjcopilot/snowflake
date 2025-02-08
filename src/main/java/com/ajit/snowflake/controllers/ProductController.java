@@ -50,6 +50,7 @@ public class ProductController {
         log.info("constructor again snowflake_1...");
         log.info("constructor again again snowflake_1...");
         log.info("constructor from snowflake_1 to snowflake snowflake_1...");
+        log.info("after rebasing from snowflake_1 snowflake ..");
         return new ResponseEntity<>(productService.createProduct(product), HttpStatus.OK);
 
     }
