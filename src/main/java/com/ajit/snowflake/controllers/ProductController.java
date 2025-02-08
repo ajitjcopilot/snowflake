@@ -28,7 +28,7 @@ public class ProductController {
     @PostMapping
     public ResponseEntity<Product> createProduct(@RequestBody Product product) {
 
-       log.info("constructor called...");
+       log.info("constructor called B...");
         return new ResponseEntity<>(productService.createProduct(product), HttpStatus.OK);
 
     }
