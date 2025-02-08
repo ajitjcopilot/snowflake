@@ -22,11 +22,13 @@ public class ProductController {
 
     public ProductController(ProductService productService) {
         this.productService = productService;
+        System.out.println("remove it again");
     }
 
 
     @PostMapping
     public ResponseEntity<Product> createProduct(@RequestBody Product product) {
+
 
        log.info("constructor called B...");
         log.info("constructor called BBBBB...");
@@ -36,6 +38,17 @@ public class ProductController {
         log.info("modified again again snowflake...");
         log.info("modified again again again snowflake...");
         log.info("modified again again again again snowflake...");
+        log.info("Productcontroleer.createProduct called..." );
+        log.info("sodified snowflake_1 called..." );
+        log.info("sodified snowflake_1 again called..." );
+
+        log.info("constructor called BBBBB11111 f1...");
+
+       log.info("constructor called b1...");
+        log.info("constructor called b1b1b1b1...");
+        log.info("constructor i m snowflake_1...");
+        log.info("constructor again snowflake_1...");
+        log.info("constructor again again snowflake_1...");
         return new ResponseEntity<>(productService.createProduct(product), HttpStatus.OK);
 
     }
