@@ -33,6 +33,8 @@ public class ProductController {
         log.info("constructor called snowflake...");
         log.info("modified snowflake...");
         log.info("modified again snowflake...");
+        log.info("modified again again snowflake...");
+        log.info("modified again again again snowflake...");
         return new ResponseEntity<>(productService.createProduct(product), HttpStatus.OK);
 
     }
