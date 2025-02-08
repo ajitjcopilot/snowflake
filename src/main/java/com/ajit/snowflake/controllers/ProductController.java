@@ -22,6 +22,7 @@ public class ProductController {
 
     public ProductController(ProductService productService) {
         this.productService = productService;
+        System.out.println("remove it again");
     }
 
 
@@ -35,3 +36,5 @@ public class ProductController {
 
 
 }
+
+
