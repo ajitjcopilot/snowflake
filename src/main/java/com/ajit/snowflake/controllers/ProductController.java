@@ -29,6 +29,7 @@ public class ProductController {
     public ResponseEntity<Product> createProduct(@RequestBody Product product) {
 
        log.info("constructor called B...");
+        log.info("constructor called BBBBB...");
         return new ResponseEntity<>(productService.createProduct(product), HttpStatus.OK);
 
     }
